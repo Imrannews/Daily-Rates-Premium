@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MH Solar - Today's Solar Market Rates in Pakistan</title>
+<meta name="description" content="Latest rates of solar panels, inverters and batteries in Pakistan. Updated daily.">
+<style>
+:root{--green:#1a7a3c;--dgreen:#0f5c2b;--navy:#0b2a55;--blue:#1c5bb8;--bg:#eef3f8;--line:#dfe6ee}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:#1b2733;padding-bottom:70px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;background:#fff;min-height:100vh}
+header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 1px 6px #0001}
+.logo{display:flex;align-items:center;gap:8px}
+.logo b{display:block;font-size:26px;letter-spacing:.5px;line-height:1;color:var(--navy);font-weight:900}
+.logo b span{color:var(--green)}
+.logo small{font-size:9px;color:#345;letter-spacing:1.5px}
+.burger{background:none;border:0;width:36px;height:30px;display:flex;flex-direction:column;justify-content:space-between;padding:4px 3px;cursor:pointer}
+.burger i{display:block;height:3px;background:var(--navy);border-radius:2px}
+nav#menu{display:none;background:var(--navy);padding:6px 16px}
+nav#menu.open{display:block}
+nav#menu a{display:block;color:#fff;padding:10px 0;border-bottom:1px solid #ffffff22}
+.hero{background:linear-gradient(100deg,#0b2a55ee 30%,#0b2a5588 70%,#f7a94a66),linear-gradient(160deg,#1e4d8f,#0b2a55 60%,#e58d2b);color:#fff;padding:24px 16px 16px;position:relative;overflow:hidden}
+.hero h1{font-size:32px;line-height:1.1;font-weight:800}
+.hero h1 span{color:#4be07a}
+.hero p{margin:10px 0 16px;font-size:14px;font-weight:600;max-width:340px;line-height:1.4}
+.hero .tag{position:absolute;right:14px;bottom:44px;transform:rotate(-12deg);font-style:italic;font-weight:700;text-align:right;font-size:15px;text-shadow:0 1px 4px #0008}
+.sun{position:absolute;right:-30px;top:-30px;width:160px;height:160px;border-radius:50%;background:radial-gradient(#ffd36b,#ffb84a55 55%,transparent 70%);opacity:.8}
+.feats{display:flex;gap:14px;position:relative;flex-wrap:wrap}
+.feats div{display:flex;align-items:center;gap:8px;font-size:11px;line-height:1.2}
+.feats em{width:32px;height:32px;border-radius:50%;background:var(--green);display:grid;place-items:center;font-style:normal;font-size:15px;flex:none}
+.feats b{display:block;font-size:12px}
+.pad{padding:12px 14px}
+.ad{border:1px solid var(--line);background:#f5f8fc;border-radius:10px;min-height:76px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;color:#789;font-size:13px;padding:6px}
+.upd{display:flex;justify-content:space-between;align-items:center;background:var(--dgreen);color:#fff;border-radius:8px;padding:11px 14px;font-size:13px;font-weight:600}
+.live:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#3fe06f;margin-right:6px}
+.card{border:1px solid var(--line);border-radius:12px;padding:10px;margin-top:12px;background:#fff;box-shadow:0 2px 8px #0b2a5510}
+.ch{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.ch>div{display:flex;align-items:center;gap:8px}
+.ic{width:34px;height:34px;border-radius:8px;background:var(--dgreen);color:#fff;display:grid;place-items:center;font-size:18px}
+.ch h2{font-size:17px;color:var(--navy)}
+.ch small{color:#48607e;font-size:11px}
+.btn{border:1px solid var(--blue);color:var(--blue);border-radius:20px;padding:6px 12px;font-size:12px;font-weight:600;white-space:nowrap}
+.tw{overflow-x:auto;border-radius:6px}
+table{width:100%;border-collapse:collapse;font-size:12px;min-width:480px}
+th{background:var(--navy);color:#fff;text-align:left;padding:8px 6px;font-weight:600}
+td{padding:9px 6px;border-bottom:1px solid var(--line)}
+tr:nth-child(even) td{background:#f6f9fc}
+.br{display:flex;align-items:center;gap:8px}
+.bd{min-width:62px;font-weight:900;font-size:12px;font-style:italic}
+.br small{display:block;color:#456;font-size:11px}
+.br strong{font-size:12px}
+.pr{font-weight:800;white-space:nowrap}
+.st{background:#d7f5df;color:#12793a;border-radius:5px;padding:3px 7px;font-size:10px;font-weight:700;white-space:nowrap}
+.st.out{background:#fde0e0;color:#b02020}
+.promo{margin-top:12px;border-radius:8px;background:linear-gradient(90deg,#123 0,#1a4d2c 40%,#0f5c2b);color:#fff;padding:16px 14px;display:flex;align-items:center;justify-content:center;gap:10px;text-align:center}
+.promo b{font-size:17px;display:block}
+.promo small{font-size:11px;opacity:.9}
+footer{background:var(--navy);color:#fff;padding:16px 14px 20px;font-size:12px}
+.soc{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.soc a{display:flex;align-items:center;gap:8px}
+.soc i{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:16px}
+.fl{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;border-top:1px solid #ffffff22;padding-top:12px;font-size:11px}
+.cp{text-align:center;margin-top:10px;font-size:11px;opacity:.8}
+.fab{position:fixed;bottom:12px;right:12px;display:flex;gap:8px;z-index:30}
+.fab a{color:#fff;border-radius:26px;padding:9px 16px;font-size:12px;font-weight:700;box-shadow:0 4px 12px #0004;line-height:1.2}
+.fab small{display:block;font-weight:600;font-size:11px}
+.wa{background:#1fa855}.cl{background:var(--blue)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <a class="logo" href="#">
+    <svg width="52" height="42" viewBox="0 0 52 42"><circle cx="18" cy="20" r="9" fill="#f5a623"/><g stroke="#f5a623" stroke-width="2.5" stroke-linecap="round"><path d="M18 4v4M5 20h4M8 9l3 3M28 9l-3 3"/></g><path d="M16 26h34l-5 14H10z" fill="#0b2a55"/><path d="M22 26l-3 14M33 26l-2 14M43 26l-1 14M13 33h34" stroke="#fff" stroke-width="1"/></svg>
+    <div><b>MH <span>SOLAR</span></b><small>CLEAN ENERGY • BRIGHTER FUTURE</small></div>
+  </a>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')"><i></i><i></i><i></i></button>
+</header>
+<nav id="menu">
+  <a href="#panels">Solar Panels</a><a href="#inverters">Inverters</a><a href="#batteries">Batteries</a><a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <div class="sun"></div>
+  <h1>Today's<br><span>Solar Market</span> Rates</h1>
+  <p>Latest Rates of Solar Panels, Inverters &amp; Batteries. Updated Daily for Your Best Investment</p>
+  <div class="tag">Solar Today<br>Savings Tomorrow</div>
+  <div class="feats">
+    <div><em>✔</em><span><b>Reliable Brands</b>100% Genuine</span></div>
+    <div><em>☺</em><span><b>Best Support</b>Before &amp; After Sale</span></div>
+    <div><em>☀</em><span><b>Save Energy</b>Save Your Future</span></div>
+  </div>
+</section>
+
+<div class="pad">
+
+  <!-- ===== ADSTERRA AD SLOT 1 (top): paste your Adsterra code inside this div ===== -->
+  <div class="ad" id="ad-top" style="min-height:60px">
+    <script>
+      atOptions = {
+        'key' : '3669bda2b3049d069331286d28a57bf9',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script src="https://jabturfembitter.com/3669bda2b3049d069331286d28a57bf9/invoke.js"></script>
+  </div>
+
+  <div class="ad" id="ad-top2" style="margin-top:10px;min-height:0;padding:0;display:block">
+    <div id="ad728b" style="width:728px;height:90px;transform-origin:0 0">
+      <script>
+        atOptions = {
+          'key' : '91da1684875678cd4b1eb4a4194c2a97',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://jabturfembitter.com/91da1684875678cd4b1eb4a4194c2a97/invoke.js"></script>
+    </div>
+  </div>
+
+  <div class="upd" style="margin-top:12px"><span>⚡ Last Updated: <span id="ud">28 September 2026</span> &nbsp;|&nbsp; <span id="ut"></span></span><span class="live">Live Rates</span></div>
+
+  <div id="tables"></div>
+
+  <!-- ===== ADSTERRA AD SLOT 2 (bottom, optional): paste code here ===== -->
+  <div class="ad" id="ad-bottom" style="margin-top:12px;min-height:0;padding:0;display:block">
+    <div id="ad728" style="width:728px;height:90px;transform-origin:0 0">
+      <script>
+        atOptions = {
+          'key' : '91da1684875678cd4b1eb4a4194c2a97',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://jabturfembitter.com/91da1684875678cd4b1eb4a4194c2a97/invoke.js"></script>
+    </div>
+  </div>
+
+  <div class="promo"><span style="font-size:26px">🏠</span><span><b>Switch to Solar</b><small>Clean Energy | Lower Bills | A Greener Future</small></span></div>
+</div>
+
+<footer id="contact">
+  <div class="soc">
+    <a href="https://facebook.com/MHSIALKOT" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><i style="background:#1877f2">f</i></a>
+    <a href="https://tiktok.com/@lmranjapan92" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><i style="background:#000;border:1px solid #fff5">♪</i></a>
+    <a href="https://youtube.com/@mhsolarenergy" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><i style="background:#e62117">▶</i></a>
+  </div>
+  <div class="fl"><a href="#">Home</a><a href="#panels">Solar Panels</a><a href="#inverters">Inverters</a><a href="#batteries">Batteries</a><a href="#">About Us</a><a href="#contact">Contact</a></div>
+  <div class="cp">© 2026 MH Solar. All Rights Reserved. &nbsp; <a href="#"><u>Privacy Policy</u></a> | <a href="#"><u>Terms &amp; Conditions</u></a></div>
+</footer>
+</div>
+
+<div class="fab">
+  <a class="wa" href="https://wa.me/923366760264" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬 WhatsApp</a>
+  <a class="cl" href="tel:+923366760264" aria-label="Call us">📞 Call</a>
+</div>
+
+<script>
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function fmt(n){return "Rs. "+Number(n||0).toLocaleString("en-US")}
+function hue(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%360;return "hsl("+h+",65%,36%)"}
+function draw(D){
+  var out="",nav="";
+  D.categories.forEach(function(c,ci){
+    var id=c.id||("c"+ci);
+    nav+="<a href='#"+esc(id)+"'>"+esc(c.title)+"</a>";
+    var heads=["Brand / Model"].concat(c.headers||[],["Price (PKR)","Status"]);
+    var h="<div class='card' id='"+esc(id)+"'><div class='ch'><div><span class='ic'>"+esc(c.icon||"▦")+"</span><span><h2>"+esc(c.title)+"</h2><small>"+esc(c.sub)+"</small></span></div></div><div class='tw'><table><tr><th>#</th>"+heads.map(function(x){return "<th>"+esc(x)+"</th>"}).join("")+"</tr>";
+    (c.rows||[]).forEach(function(r,i){
+      h+="<tr><td>"+(i+1)+".</td><td><div class='br'><span class='bd' style='color:"+hue(r.brand||"")+"'>"+esc(r.brand)+"</span><span><strong>"+esc(r.model)+"</strong></span></div></td>"+(r.cells||[]).map(function(m){return "<td>"+esc(m)+"</td>"}).join("")+"<td class='pr'>"+fmt(r.price)+"</td><td><span class='st"+(r.status==="In Stock"?"":" out")+"'>"+esc(r.status)+"</span></td></tr>";
+    });
+    out+=h+"</table></div></div>";
+  });
+  document.getElementById("tables").innerHTML=out;
+  document.getElementById("menu").innerHTML=nav+"<a href='#contact'>Contact</a>";
+  var d=new Date(D.updated);
+  if(!isNaN(d)){
+    document.getElementById("ud").textContent=d.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric",timeZone:"Asia/Karachi"});
+    document.getElementById("ut").textContent=d.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",timeZone:"Asia/Karachi"});
+  }
+}
+fetch("rates.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json()}).then(draw).catch(function(){
+  document.getElementById("tables").innerHTML="<p style='padding:20px;text-align:center'>Rates load nahi ho sakay. Page refresh karein.</p>";
+});
+function fitAd(){
+  [["ad-bottom","ad728"],["ad-top2","ad728b"]].forEach(function(p){
+    var box=document.getElementById(p[0]),ad=document.getElementById(p[1]);
+    if(!box||!ad)return;
+    var s=Math.min(1,box.clientWidth/728);
+    ad.style.transform="scale("+s+")";
+    box.style.height=(90*s)+"px";
+  });
+}
+fitAd();window.addEventListener("resize",fitAd);
+</script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+{
+ "updated": "2026-09-28T14:15:00+05:00",
+ "categories": [
+  {
+   "id": "panels",
+   "title": "Solar Panels",
+   "sub": "High Efficiency • Long Life • Trusted Brands",
+   "icon": "▦",
+   "headers": [
+    "Wattage",
+    "Unit"
+   ],
+   "rows": [
+    {
+     "brand": "Jinko Solar",
+     "model": "Jinko 585W Mono PERC",
+     "cells": [
+      "585W",
+      "Per Panel"
+     ],
+     "price": 27500,
+     "status": "In Stock"
+    },
+    {
+     "brand": "Longi",
+     "model": "Longi 585W Hi-MO 6",
+     "cells": [
+      "585W",
+      "Per Panel"
+     ],
+     "price": 27800,
+     "status": "In Stock"
+    },
+    {
+     "brand": "Canadian Solar",
+     "model": "Canadian 580W TOPCon",
+     "cells": [
+      "580W",
+      "Per Panel"
+     ],
+     "price": 27200,
+     "status": "In Stock"
+    },
+    {
+     "brand": "JA Solar",
+     "model": "JA 575W Mono",
+     "cells": [
+      "575W",
+      "Per Panel"
+     ],
+     "price": 26900,
+     "status": "In Stock"
+    }
+   ]
+  },
+  {
+   "id": "inverters",
+   "title": "Inverters",
+   "sub": "Efficient • Smart • Durable",
+   "icon": "▣",
+   "headers": [
+    "Capacity",
+    "Phase",
+    "Unit"
+   ],
+   "rows": [
+    {
+     "brand": "Inverex",
+     "model": "Nitrox 6KW",
+     "cells": [
+      "6KW",
+      "Single",
+      "Each"
+     ],
+     "price": 135000,
+     "status": "In Stock"
+    },
+    {
+     "brand": "Growatt",
+     "model": "SPH 5KW",
+     "cells": [
+      "5KW",
+      "Single",
+      "Each"
+     ],
+     "price": 118000,
+     "status": "In Stock"
+    },
+    {
+     "brand": "Solis",
+     "model": "S6 6KW",
+     "cells": [
+      "6KW",
+      "Single",
+      "Each"
+     ],
+     "price": 142000,
+     "status": "In Stock"
+    },
+    {
+     "brand": "Huawei",
+     "model": "SUN2000 5KW",
+     "cells": [
+      "5KW",
+      "Single",
+      "Each"
+     ],
+     "price": 128900,
+     "status": "In Stock"
+    }
+   ]
+  },
+  {
+   "id": "batteries",
+   "title": "Batteries",
+   "sub": "More Backup • More Independence",
+   "icon": "🔋",
+   "headers": [
+    "Type",
+    "Capacity",
+    "Unit"
+   ],
+   "rows": [
+    {
+     "brand": "Huawei",
+     "model": "Lithium Battery",
+     "cells": [
+      "Lithium",
+      "5.12kWh",
+      "Each"
+     ],
+     "price": 245000,
+     "status": "In Stock"
+    },
+    {
+     "brand": "AGS",
+     "model": "AGS Tubular Battery",
+     "cells": [
+      "Tubular",
+      "200Ah",
+      "Each"
+     ],
+     "price": 48000,
+     "status": "In Stock"
+    },
+    {
+     "brand": "Osaka",
+     "model": "Osaka Tubular Battery",
+     "cells": [
+      "Tubular",
+      "200Ah",
+      "Each"
+     ],
+     "price": 46500,
+     "status": "In Stock"
+    },
+    {
+     "brand": "Phoenix",
+     "model": "Phoenix Tubular Battery",
+     "cells": [
+      "Tubular",
+      "200Ah",
+      "Each"
+     ],
+     "price": 45000,
+     "status": "In Stock"
+    }
+   ]
+  }
+ ]
+}
